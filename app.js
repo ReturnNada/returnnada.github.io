@@ -1,6 +1,53 @@
 const pi = Math.PI;
 let username;
 let realname = "";
+const divElement = document.getElementById("myDiv");
+const button5 = document.getElementById("button5");
+const myImg = document.querySelector("#myImg");
+const div2 = document.getElementById("div2");
+
+let x = 0;
+let y = 0;
+
+//divElement.onmousedown = turnGreen;
+//divElement.onmouseup = turnRed;
+
+window.addEventListener("keydown", move);
+
+button5.addEventListener("click", () => {
+    if(myImg.style.display == "none"){
+        myImg.style.display = "block";
+    }
+    else{
+        myImg.style.display = "none";
+    }
+})
+
+divElement.addEventListener("mousedown", turnGreen);
+divElement.addEventListener("mouseup", turnRed);
+
+function move(event){
+    switch(event.key){
+        case "w":
+            y -= 20;
+            div2.style.top = y + "px";
+            break;
+        case "a":
+            x -= 20;
+            div2.style.left = x + "px";
+            break;
+        case "s":
+            y += 20;
+            div2.style.top = y + "px";
+            break;
+        case "d":
+            x += 20;
+            div2.style.left = x + "px";
+            break;
+        default:
+            break;
+    }
+}
 
 function alertButton() {
     alert("Less clicking, more listening >:(");
@@ -56,4 +103,12 @@ document.getElementById("button4").onclick = function(){
     else{
         window.alert("No money :(");
     }
+}
+
+function turnGreen(){
+    divElement.style.backgroundColor = "green";
+}
+
+function turnRed(){
+    divElement.style.backgroundColor = "red";
 }
