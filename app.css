@@ -234,6 +234,7 @@ a:active{
 @media screen and (max-width:600px){
     #imgTable{
         background-attachment: scroll;
+        font-size: 20px;
     }
 
     #imgDiv2{
