@@ -237,10 +237,17 @@ a:active{
     }
 
     #imgDiv2{
-        float: right;
+        float: none;
+        display: inline-block;
+    }
+
+    #imgDiv{
+        float: none;
+        display: inline-block;
     }
 
     .font20{
+        clear: both;
         font-size: 20px;
     }
 }
