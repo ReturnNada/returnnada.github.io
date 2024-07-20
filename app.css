@@ -235,4 +235,8 @@ a:active{
     #imgTable{
         background-attachment: scroll;
     }
+
+    .font20{
+        font-size: 20px;
+    }
 }
