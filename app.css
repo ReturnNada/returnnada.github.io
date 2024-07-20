@@ -236,6 +236,10 @@ a:active{
         background-attachment: scroll;
     }
 
+    #imgDiv2{
+        float: right;
+    }
+
     .font20{
         font-size: 20px;
     }
