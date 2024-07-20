@@ -1,31 +1,234 @@
-h1 {
-    color : black; 
+@font-face {
+    src: url(fonts/ShadowsIntoLight-Regular.ttf);
+    font-family: ShadowsIntoLight;
+}
+@font-face {
+    src: url(fonts/KalniaGlaze-VariableFont_wdth\,wght.ttf);
+    font-family: KalniaGlaze;
+}
+@font-face {
+    src: url(fonts/PlayfairDisplay-VariableFont_wght.ttf);
+    font-family: PlayfairDisplay;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+a:link{
+    color: rgb(0, 0, 255);
+}
+a:visited{
+    color: blue;
+}
+a:hover{
+    color: rgb(255, 0, 0);
+}
+a:active{
+    color: rgb(192, 192, 192);
+}
+
+
+#firstBody{
+    background-color: slategray;
+}
+
+#firstHeader{
+    font-family: ShadowsIntoLight;
+    font-size: 20px;
     text-align: center;
-    font-size: 50px;
+    background-color: palegreen;
+    border: 3px solid black;
+    border-radius: 10px;
+
+    background-image: url(/images/Bg1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
 }
 
-body {
-    background-color : white;
+.whiteUnderline{
+    text-shadow: 2px 2px 1px rgb(255, 255, 255);
 }
 
-#myDiv{
-    background-color: red;
-    border: 2px solid;
-    width: 100px;
-    height: 100px;
+#firstMain{
+    font-size: 20px;
+    text-align: center;
+    background-color: palegoldenrod;
+    border: 3px solid black;
+    border-radius: 10px;
+
+    animation-name: colorFlux;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+#imgTable{
     font-size: 30px;
+    background-image: url(/images/Bg1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.imgShadow{
+    box-shadow: 10px 15px 3px black;
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+#firstFooter{
     text-align: center;
+    background-color: paleturquoise;
+    border: 3px solid black;
+    border-radius: 10px;
 }
 
-#div2{
-    width: 100px;
-    height: 100px;
-    background-color: lightgoldenrodyellow;
-    border: 2px solid;
-    position: relative;
+#secondFooter{
+    text-align: center;
+    font-size: 30px;
 }
 
-#myImg{
-    width: 50px;
+.margin10{
+    margin: 10px;
+    padding: 10px;
+}
+
+.font20{
+    font-size: 25px;
+}
+
+#aboutBody{
+    border: 3px dashed;
+    display: flow-root;
+}
+
+#aboutParagraph{
+    width: auto;
+    height: auto;
+
+    margin: 10px;
+    padding: 10px;
+
+    display: flow-root;
+}
+
+.pic{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#imgDiv{
+    width: 40%;
+    height: 40%;
+    float: right;
+    margin: 5px;
+    padding: 5px;
+}
+
+#imgDiv2{
+    width: 33%;
+    height: 33%;
+    float: left;
+    margin: 5px;
+    padding: 5px;
+}
+
+.fa-brands.fa-linkedin.fa-5x{
+    color:hsl(201, 100%, 35%);
+}
+.fa-brands.fa-linkedin.fa-5x:hover{
+    color:hsl(201, 100%, 45%);
+}
+.fa-brands.fa-github.fa-5x{
+    color: black;
+}
+.fa-brands.fa-github.fa-5x:hover{
+    color: hsl(0, 0%, 30%);
+}
+
+.iconDiv{
+    display: block;
+    text-align: right;
+    margin-top: 20px;
+}
+
+.iconDiv a{
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+#secondHeader{
+    float: left;
+    font-size: 50px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#welcomeText{
+    animation-name: bobInOut;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+#toHeader{
+    animation-name: upDown;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    display: inline-block;
+}
+#lucasHeader{
+    animation-name: upDown;
+    animation-duration: 1.05s;
+    animation-iteration-count: infinite;
+    display: inline-block;
+}
+#rHeader{
+    animation-name: upDown;
+    animation-duration: 1.1s;
+    animation-iteration-count: infinite;
+    display: inline-block;
+}
+#domainHeader{
+    animation-name: upDown;
+    animation-duration: 1.15s;
+    animation-iteration-count: infinite;
+    display: inline-block;
+}
+
+#backButton{
+    background-color: navy;
+    color: white;
+    border-radius: 10px;
+    width: 150px;
     height: 50px;
+    cursor: pointer;
+}
+
+.revFade{
+    animation-name: reverseFade;
+    animation-duration: 2.5s;
+}
+
+@keyframes colorFlux{
+    0%{background-color: palegoldenrod;}
+    50%{background-color: hsl(54, 69%, 75%);}
+}
+@keyframes upDown {
+    50%{transform: translateY(50%);}
+    50%{transform: translateY(-50%);}
+}
+@keyframes bobInOut{
+    50%{transform: scale(1.1, 1.1);}
+}
+@keyframes reverseFade {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }

@@ -1,59 +1,158 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-
-    <link rel="stylesheet" href="app.css"/>
-
+    <link rel="stylesheet" href="app.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/Bg1.png">
+    <title>Personal Website</title>
+    <script src="https://kit.fontawesome.com/92dc64c58e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
+<body id="firstBody">
+    <!-- This is a comment -->
+     <header id="firstHeader" class="whiteUnderline">
+        <h1 id="welcomeText"><u>Welcome</u></h1>
+        <h2 id="toHeader">To </h2>
+        <h2 id="lucasHeader">Lucas </h2>
+        <h2 id="rHeader">R's </h2>
+        <h2 id="domainHeader">Domain</h2>
 
-<body>
+        <br>
+ 
+        <a href="https://www.google.com"
+        target="_blank"
+        title="May Go To Google">
+            Click for a better experience
+        </a>
 
-    <h1>Website?</h1>
+        <br><br>
 
-    <label id = "myLabel">Enter your name:</label>
-    <input type="text" id = "myText"><br>
-    <button type = "button" id = "button1">Submit</button>
+        <a href="aboutPage.html"
+        title="Goes to the About page">
+            | About |
+        </a>
 
-    <p id = "p1"></p>
-    <p id = "p2"></p>
-    <p id = "p3"></p>
+        <a href="mailto:armaitus@gmail.com"
+        target="_blank"
+        title="Email Me">
+            | Contact Me |
+        </a>
 
-    <label id = "ageLabel">Enter your age:</label>
-    <input type = "text" id = "myText2"><br>
-    <button type = "button" id = "button2">Submit</button><br>
+        <a href="LAR Resume 2024.pdf"
+        target="_blank"
+        title="Resume">
+            | Resume |
+        </a>
 
-    <p id = "p4"></p>
+        <br>
 
-    <label for = "myCheckbox">subscribe?</label>
-    <input type = "checkbox" id = "myCheckbox"><br>
-    <button type = "button" id = "button3">Submit</button><br>
+        <p>This is <del>NOT</del> <b>a professional</b> website</p>
 
-    <br><label for = "visaBtn">Visa</label>
-    <input type = "radio" name = "card" id = "visaBtn">
-    <label for = "mastercardBtn">Mastercard</label>
-    <input type = "radio" name = "card" id = "mastercardBtn">
-    <label for = "paypalBtn">Paypal</label>
-    <input type = "radio" name = "card" id = "paypalBtn"><br>
-    <button type = "button" id = "button4">Submit</button><br><br>
+    </header>
 
-    <button id = "button5">Load</button><br>
-    <image id = "myImg" src = "stick.png" style="display: none;">
+    <main id="firstMain">
+        <!-- Create hyperlinks to the competition websites -->
 
-    <br><button onclick="alertButton()">Don't Click Me</button><br><br>
+        <h2 class="whiteUnderline revFade">Projects/Interests</h2>
 
-    <div id = "myDiv">
-        <label id = plsLabel>Please Click Me</label>
-    </div>
+        <br>
+        <p class="whiteUnderline revFade">Built a functioning (trust me) robot used in Lockheed Martin's annual E-Week competition (2024)</p>
+        <img src="images/Robot2.png" width="720px" class="imgShadow" data-aos="fade-up">
 
-    <br>
-    
-    <div id = div2>
+        <br>
+        <br>
+        <br>
 
-    </div>
+        <p class="whiteUnderline" data-aos="fade-right">Currently developing a strategy game, where you lead a team of unique characters against other players!</p>
+        <p class="whiteUnderline" data-aos="fade-right">Three characters have animations finished so far, with more to come</p>
+        <p data-aos="fade-right"><mark>Click on the <u>GIFs</u> to view the spritesheets!</mark></p>
+        
+        <table class="center" border="1px" id="imgTable">
+            <tr>
+                <th class="whiteUnderline">Ranged</th>
+                <th class="whiteUnderline">Melee</th>
+                <th class="whiteUnderline">Deranged</th>
+            </tr>
+            <tr>
+                <td data-aos="flip-right" data-aos-delay="250">
+                    <a href="images/MageAttSS.png"
+                    target="_blank">
+                        <img src="images/MageGif.gif" 
+                        width="256px"
+                        alt="Mage Attack Sprite Sheet">
+                    </a>
+                </td>
+                <td data-aos="flip-right" data-aos-delay="250">
+                    <a href="images/B1attSS.png"
+                    target="_blank">
+                        <img src="images/B1Gif.gif" 
+                        width="320px"
+                        alt="Nata Attack Sprite Sheet">
+                    </a>
+                </td>
+                <td data-aos="flip-right" data-aos-delay="250">
+                    <a href="images/BoomAttSS.png"
+                    target="_blank">
+                        <img src="images/BoomGif.gif"
+                        width="256px"
+                        alt="Boom Attack Sprite Sheet">
+                    </a>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <br>
 
-</body>
+        <p class="whiteUnderline" data-aos="fade-up">I like circuits, and may or may not leave them on whiteboards :)</p>
+        <img src="images/BoardCircuit.png" data-aos="fade-up" width="720px" class="imgShadow revFade">
+        <br>
+        <br>
+        <br>
+
+        <p class="whiteUnderline" data-aos="fade-right">Made a Rube Goldberg Machine for the Manufacturing Expo held at the Orange County Convention Center (2023)</p>
+        <div>
+            <img src="images/RG.png" width="600px" height="500px" class="imgShadow revFade">
+            <img src="images/RGSketch.png" width="600px" height="500px" class="imgShadow revFade">    
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <p class="whiteUnderline" data-aos="fade-right">Built a random number generator circuit that simulates a dice roll</p>
+        <img src="images/rng.png" class="imgShadow revFade" width="600px">
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <a href="aboutPage.html"
+        title="Goes to the About page">
+            <q>About</q> Page
+        </a>
+
+        <br>
+        <br>
+        <br>
+
+    </main>
+
+    <footer id="firstFooter">
+        <br>
+        Author: Lucas R
+        <br>
+        &copy; All Rights Reserved
+        <br>
+        <a href="mailto:armaitus@gmail.com">
+            armaitus@gmail.com
+        </a>
+        <p> </p>
+    </footer>
 
     <script src="app.js"></script>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
 </html>
