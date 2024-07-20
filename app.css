@@ -2,14 +2,6 @@
     src: url(fonts/ShadowsIntoLight-Regular.ttf);
     font-family: ShadowsIntoLight;
 }
-@font-face {
-    src: url(fonts/KalniaGlaze-VariableFont_wdth\,wght.ttf);
-    font-family: KalniaGlaze;
-}
-@font-face {
-    src: url(fonts/PlayfairDisplay-VariableFont_wght.ttf);
-    font-family: PlayfairDisplay;
-}
 
 *{
     box-sizing: border-box;
@@ -27,7 +19,6 @@ a:hover{
 a:active{
     color: rgb(192, 192, 192);
 }
-
 
 #firstBody{
     background-color: slategray;
@@ -81,6 +72,13 @@ a:active{
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+}
+
+.centerMod{
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: 400px;
 }
 
 #firstFooter{
@@ -231,4 +229,10 @@ a:active{
 @keyframes reverseFade {
     0%{opacity: 0;}
     100%{opacity: 1;}
+}
+
+@media screen and (max-width:600px){
+    #imgTable{
+        background-attachment: scroll;
+    }
 }
