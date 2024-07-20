@@ -251,4 +251,8 @@ a:active{
         clear: both;
         font-size: 20px;
     }
+
+    .centerMod{
+        height: 275px;
+    }
 }
