@@ -57,7 +57,7 @@ a:active{
 
 #imgTable{
     font-size: 30px;
-    background-image: url(/images/Bg1.png);
+    background-image: url(/images/Bg2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -171,6 +171,7 @@ a:active{
 }
 
 #welcomeText{
+    display: inline-block;
     animation-name: bobInOut;
     animation-duration: 1s;
     animation-iteration-count: infinite;
