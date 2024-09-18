@@ -41,6 +41,11 @@ a:active{
 
 .whiteUnderline{
     color: white;
+    text-shadow: 2px 2px 1px rgb(255, 255, 255);
+}
+
+.blackUnderline{
+    color: white;
     text-shadow: 2px 2px 1px rgb(0, 0, 0);
 }
 
@@ -84,7 +89,7 @@ a:active{
 
 #firstFooter{
     text-align: center;
-    background-color: rgb(75, 113, 113);
+    background-color: rgb(83, 151, 151);
     border: 3px solid black;
     color: white;
     border-radius: 10px;
