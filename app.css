@@ -8,10 +8,10 @@
 }
 
 a:link{
-    color: rgb(0, 0, 255);
+    color: rgb(52, 52, 255);
 }
 a:visited{
-    color: blue;
+    color: rgb(0, 0, 255);
 }
 a:hover{
     color: rgb(255, 0, 0);
@@ -32,7 +32,7 @@ a:active{
     border: 3px solid black;
     border-radius: 10px;
 
-    background-image: url(/images/Bg1.png);
+    background-image: url(/images/Bg3.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: scroll;
@@ -40,13 +40,14 @@ a:active{
 }
 
 .whiteUnderline{
-    text-shadow: 2px 2px 1px rgb(255, 255, 255);
+    color: white;
+    text-shadow: 2px 2px 1px rgb(0, 0, 0);
 }
 
 #firstMain{
     font-size: 20px;
     text-align: center;
-    background-color: palegoldenrod;
+    background-color: hsl(45, 2%, 54%);
     border: 3px solid black;
     border-radius: 10px;
 
@@ -83,8 +84,9 @@ a:active{
 
 #firstFooter{
     text-align: center;
-    background-color: paleturquoise;
+    background-color: rgb(75, 113, 113);
     border: 3px solid black;
+    color: white;
     border-radius: 10px;
 }
 
@@ -217,8 +219,8 @@ a:active{
 }
 
 @keyframes colorFlux{
-    0%{background-color: palegoldenrod;}
-    50%{background-color: hsl(54, 69%, 75%);}
+    0%{background-color: hsl(45, 2%, 54%);}
+    50%{background-color: hsl(48, 2%, 57%);}
 }
 @keyframes upDown {
     50%{transform: translateY(50%);}
