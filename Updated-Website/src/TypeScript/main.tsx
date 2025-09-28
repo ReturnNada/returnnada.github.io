@@ -11,7 +11,7 @@ import SketcheePage from "./Pages/SketcheePage.tsx";
 import HitboxPage from "./Pages/HitboxPage.tsx";
 import NightVisionPage from "./Pages/NightVisionPage.tsx";
 import NoiseDetectorPage from "./Pages/NoiseDetectorPage.tsx";
-import QIRPage from "./Pages/QIRPage.tsx";
+import TurntablePage from "./Pages/TurntablePage.tsx";
 import RobotPage from "./Pages/RobotPage.tsx";
 import AboutPage from "./Pages/AboutPage.tsx";
 import ProjectPage from "./Pages/ProjectPage.tsx";
@@ -28,7 +28,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path="/website/Hitbox/" element={<HitboxPage />} />
         <Route path="/website/NightVision/" element={<NightVisionPage />} />
         <Route path="/website/NoiseDetector/" element={<NoiseDetectorPage />} />
-        <Route path="/website/QIR/" element={<QIRPage />} />
+        <Route path="/website/Turntable/" element={<TurntablePage />} />
         <Route path="/website/Robot/" element={<RobotPage />} />
         <Route path="/website/About/" element={<AboutPage />} />
         <Route path="/website/Projects/" element={<ProjectPage />} />

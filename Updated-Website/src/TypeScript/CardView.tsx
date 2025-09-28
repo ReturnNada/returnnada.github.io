@@ -8,7 +8,7 @@ import Sketchee from "../assets/Sketchee.png";
 import Hitbox from "../assets/Hitbox.jpg";
 import NV1 from "../assets/NV1.jpg";
 import Noise_Detector from "../assets/Noise_Detector.jpg";
-import QIR from "../assets/QIR.png";
+import Turntable from "../assets/Turntable.png";
 import Robot2 from "../assets/Robot2.png";
 import QuestionMark from "../assets/QuestionMark.jpg";
 
@@ -38,17 +38,17 @@ const CardView: React.FC = () => {
     },
     {
       id: 3,
+      title: "Turntable",
+      text: "For playing vinyls",
+      imageUrl: Turntable,
+      link: "/website/Turntable/",
+    },
+    {
+      id: 4,
       title: "Night Vision Goggles",
       text: "Uses an IR camera + Raspberry Pi",
       imageUrl: NV1,
       link: "/website/NightVision/",
-    },
-    {
-      id: 4,
-      title: "Class Action",
-      text: "A character-based local multiplayer game",
-      imageUrl: CASS8,
-      link: "/website/CA/",
     },
     {
       id: 5,
@@ -59,17 +59,17 @@ const CardView: React.FC = () => {
     },
     {
       id: 6,
+      title: "Class Action",
+      text: "A character-based local multiplayer game",
+      imageUrl: CASS8,
+      link: "/website/CA/",
+    },
+    {
+      id: 7,
       title: "Noise Detector",
       text: "Uses an STM32, LEDs, and I2C microphone",
       imageUrl: Noise_Detector,
       link: "https://github.com/ReturnNada/Library-Sound-Monitor",
-    },
-    {
-      id: 7,
-      title: "QIR (WIP)",
-      text: "Air-hockey inspired game",
-      imageUrl: QIR,
-      link: "https://github.com/Sleepwalker-Studios/QIR",
     },
     {
       id: 8,
