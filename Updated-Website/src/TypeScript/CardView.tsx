@@ -94,11 +94,7 @@ const CardView: React.FC = () => {
           <Col key={card.id}>
             <Link
               to={card.link}
-              target={
-                card.id === 8 || card.id === 7 || card.id === 6
-                  ? "_blank"
-                  : "_self"
-              }
+              target={card.id === 8 || card.id === 7 ? "_blank" : "_self"}
               className="removeFormat"
             >
               <Card className="hover-zoom cardAnim">

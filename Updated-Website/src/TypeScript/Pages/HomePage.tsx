@@ -1,4 +1,4 @@
-import bgvid from "../../assets/Background.mp4";
+import bgvid from "../../assets/Cube spin.mp4";
 {
   /*
   Add: 
@@ -21,26 +21,26 @@ function App() {
       }}
     >
       <NavBar></NavBar>
-      <video autoPlay muted loop id="myVideo">
+      <video
+        autoPlay
+        muted
+        loop
+        id="myVideo"
+        style={{
+          paddingBottom: "20vh",
+        }}
+      >
         <source src={bgvid} type="video/mp4"></source>
       </video>
       <h1
         style={{
           paddingTop: "33vh",
-          justifySelf: "center",
         }}
         className="openText"
       >
         Welcome
       </h1>
-      <h1
-        style={{
-          justifySelf: "center",
-        }}
-        className="openText"
-      >
-        to Lucas R's domain
-      </h1>
+      <h1 className="openText">to Lucas R's domain</h1>
       <br />
     </div>
   );

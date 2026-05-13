@@ -27,20 +27,12 @@ function NotFoundPage() {
       <h1
         style={{
           paddingTop: "33vh",
-          justifySelf: "center",
         }}
         className="openText"
       >
         Welcome
       </h1>
-      <h1
-        style={{
-          justifySelf: "center",
-        }}
-        className="openText"
-      >
-        to Lucas R's domain
-      </h1>
+      <h1 className="openText">to Lucas R's domain</h1>
       <br />
     </div>
   );

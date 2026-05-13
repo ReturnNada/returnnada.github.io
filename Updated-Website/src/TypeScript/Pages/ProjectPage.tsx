@@ -9,14 +9,7 @@ function ProjectPage() {
       }}
     >
       <NavigationBar></NavigationBar>
-      <h1
-        style={{
-          paddingTop: "100px",
-          justifySelf: "center",
-        }}
-      >
-        Projects
-      </h1>
+      <h1 className="pageTitle">Projects</h1>
       <CardView></CardView>
       <footer
         style={{
