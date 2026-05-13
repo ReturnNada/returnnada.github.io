@@ -1,4 +1,4 @@
-import bgvid from "../assets/Background.mp4";
+import bgvid from "../assets/Cube spin.mp4";
 {
   /*
   Add: 
