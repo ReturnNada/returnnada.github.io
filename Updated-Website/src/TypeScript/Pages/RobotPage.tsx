@@ -40,17 +40,12 @@ function RobotPage() {
               <Card.Body className="p-4">
                 <Card.Text className="projectText mb-0">
                   In my high school engineering class, Lockheed Martin would use
-                  their talent pool for recruiting us into their annual
-                  "E-Week" competition. It followed a similar format to VEX
-                  competitions, except for the fact that VEX competitions don't
-                  take place on the campus of a high-security aerospace company
-                  sponsored by the US Government. I was the lead programmer and
-                  did most of the wiring for our competition robot, which was
-                  able to handle simple tasks like motor driving and lifting
-                  with logic from an Arduino Uno. The spaghetti wiring,
-                  alligator-clip method of plugging in the lipo battery, and
-                  flashy shades ensured that if our robot went down, it would
-                  be in style (it didn't).
+                  their talent pool for recruiting us into their annual "E-Week"
+                  competition, which followed a similar format to VEX
+                  competitions. I was the lead programmer and did all of the
+                  wiring for our competition robot, which was able to handle
+                  simple tasks like motor driving and lifting with logic from an
+                  Arduino Uno.
                 </Card.Text>
               </Card.Body>
             </Card>

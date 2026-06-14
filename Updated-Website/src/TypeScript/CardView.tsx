@@ -31,17 +31,17 @@ const CardView: React.FC = () => {
     },
     {
       id: 2,
-      title: "HitBox",
-      text: "Makeshift controller for fighting games",
-      imageUrl: Hitbox,
-      link: "/website/Hitbox/",
-    },
-    {
-      id: 3,
       title: "Turntable",
       text: "For playing vinyls",
       imageUrl: Turntable,
       link: "/website/Turntable/",
+    },
+    {
+      id: 3,
+      title: "HitBox",
+      text: "Makeshift controller for fighting games",
+      imageUrl: Hitbox,
+      link: "/website/Hitbox/",
     },
     {
       id: 4,
@@ -59,27 +59,20 @@ const CardView: React.FC = () => {
     },
     {
       id: 6,
-      title: "Class Action",
-      text: "A character-based local multiplayer game",
-      imageUrl: CASS8,
-      link: "/website/CA/",
-    },
-    {
-      id: 7,
       title: "Noise Detector",
       text: "Uses an STM32, LEDs, and I2C microphone",
       imageUrl: Noise_Detector,
       link: "https://github.com/ReturnNada/Library-Sound-Monitor",
     },
     {
-      id: 8,
+      id: 7,
       title: "Sketchee (WIP)",
       text: "A productivity app for artists",
       imageUrl: Sketchee,
       link: "https://github.com/ReturnNada/Sketchee",
     },
     {
-      id: 9,
+      id: 8,
       title: "What's Next?",
       text: "Future plans and project ideas",
       imageUrl: QuestionMark,
@@ -94,7 +87,7 @@ const CardView: React.FC = () => {
           <Col key={card.id}>
             <Link
               to={card.link}
-              target={card.id === 8 || card.id === 7 ? "_blank" : "_self"}
+              target={card.id === 6 || card.id === 7 ? "_blank" : "_self"}
               className="removeFormat"
             >
               <Card className="hover-zoom cardAnim">

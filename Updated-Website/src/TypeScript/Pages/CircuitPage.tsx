@@ -6,6 +6,7 @@ import "../../App.css";
 import MSXV_CB_Breakout_Rev_1 from "../../MSXV_CB_Breakout_Rev_1/MSXV_CB_Breakout_Rev_1.glb";
 import PCB_AntiSparkV3 from "../../PCB_AntiSparkV3/PCB_AntiSparkV3.glb";
 import PCB_Battery_Tester from "../../PCB_Battery_Tester/PCB_Battery_Tester.glb";
+import Motor_Driver from "../../Motor_Driver/MD.glb";
 
 interface PCB {
   title: string;
@@ -19,6 +20,12 @@ const pcbs: PCB[] = [
     description:
       "Allows for another board hosting an STM32 to interface with other electronic components, in a fashion similar to the Arduino boards. This ensures the team knows that the other board would interface properly in the final design.",
     model: MSXV_CB_Breakout_Rev_1,
+  },
+  {
+    title: "Motor Driver",
+    description:
+      "Takes in a DC 12V input and depending on the position of a DP3T switch, controls one of three speeds for a motor for use in a vinyl turntable. Solder holes are used to allow for components to be placed freely in the turntable base rather than having the components directly on the board. Debug LEDs and mounting holes are present.",
+    model: Motor_Driver,
   },
   {
     title: "AntiSpark",

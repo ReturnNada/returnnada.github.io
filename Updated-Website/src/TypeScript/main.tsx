@@ -5,7 +5,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "../App.css";
 import HomePage from "./Pages/HomePage.tsx";
 import NotFoundPage from "./NotFoundPage.tsx";
-import ClassActionPage from "./Pages/ClassActionPage.tsx";
 import CircuitPage from "./Pages/CircuitPage.tsx";
 import SketcheePage from "./Pages/SketcheePage.tsx";
 import HitboxPage from "./Pages/HitboxPage.tsx";
@@ -22,7 +21,6 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <BrowserRouter>
       <Routes>
         <Route path="/website/" element={<HomePage />} />
-        <Route path="/website/CA/" element={<ClassActionPage />} />
         <Route path="/website/PCBs/" element={<CircuitPage />} />
         <Route path="/website/Sketchee/" element={<SketcheePage />} />
         <Route path="/website/Hitbox/" element={<HitboxPage />} />
@@ -37,5 +35,5 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
-  </React.StrictMode>
+  </React.StrictMode>,
 );
