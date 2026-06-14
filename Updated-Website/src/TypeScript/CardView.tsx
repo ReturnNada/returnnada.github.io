@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-import CASS8 from "../assets/CASS8.png";
 import Electrium from "../assets/Electrium.png";
 import Sketchee from "../assets/Sketchee.png";
 import Hitbox from "../assets/Hitbox.jpg";
